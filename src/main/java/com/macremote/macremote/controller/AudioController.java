@@ -36,4 +36,24 @@ public class AudioController {
         String[] command = { "osascript", "-e", "tell application \"Spotify\" to playpause" };
         return audioService.increaseVolumeService(command,"spotify play/pause");
     }
+
+    @GetMapping("/arrow")
+    public String chromeFastForward(@RequestParam int type) {
+        String[] command = {
+                "osascript",
+                "-e",
+                "tell application \"System Events\" to key code " + type
+        };
+        return audioService.increaseVolumeService(command,type+" Arrow");
+    }
+
+    @GetMapping("/skipad")
+    public String skipYouTubeAd() {
+        String[] command = {
+                "osascript",
+                "-e",
+                "tell application \"Google Chrome\" to tell active tab of front window to execute javascript \"document.querySelector('.ytp-ad-skip-button').click();\""
+        };
+        return audioService.increaseVolumeService(command,"Skip Ad on YouTube");
+    }
 }

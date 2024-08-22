@@ -5,8 +5,8 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 
 @Service
-public class AudioService {
-    public String increaseVolumeService(String[] command, String key) {
+public class SystemService {
+    public String systemExecuteCommand(String[] command, String key) {
         try {
             Process process = Runtime.getRuntime().exec(command);
             process.waitFor();
