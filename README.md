@@ -19,7 +19,7 @@ This Spring Boot application offers a RESTful API to manage media settings on a 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/mac-media-controller-backend.git
+   git clone https://github.com/yashwanth170/mac-mini-remote.git
    cd mac-media-controller-backend
    ```
 
