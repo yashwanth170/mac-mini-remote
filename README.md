@@ -1,6 +1,5 @@
 # Mac Media Controller Backend
-
-This Spring Boot application provides a RESTful API to control media settings on a Mac, including volume control, playing/pausing media, skipping forward/backward, and shutting down or putting the system to sleep remotely.
+This Spring Boot application offers a RESTful API to manage media settings on a Mac, including volume control, media playback (play/pause), skipping forward/backward, and remotely shutting down or putting the system to sleep. You can run this application on your Mac and use your mobile device to access the Mac's IP address for remote control.
 
 ## Features
 
